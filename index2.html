@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>調査用紙</title>
+	<style type="text/css"></style>
+</head>
+<body>
+	<form method="post" action="#">
+		<h3>回答者情報</h3>
+		<fieldset>
+			<legend>学生番号と氏名</legend>
+			<label for="number">学生番号</label> <input type="text" name="number" id="number"><br>
+			<label for="name">氏名</label> <input type="text" name="name" id="name">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>所属学科と学年</legend>
+			<select>
+				<optgroup label="教養学部">
+					<option value="人間科学科">人間科学科</option>
+					<option value="地域構想学科">地域構想学科</option>
+					<option value="情報科学科">情報科学科</option>
+					<option value="言語文化学科">言語文化学科</option>
+				</optgroup>
+				<optgroup label="文学部">
+					<option value="英文学科">英文学科</option>
+					<option value="総合人文学科">総合人文学科</option>
+					<option value="歴史学科">歴史学科</option>
+					<option value="教育学科">教育学科</option>
+				</optgroup>
+				<optgroup label="経済学部">
+					<option value="経済学科">経済学科</option>
+					<option value="共生社会経済学科">共生社会経済学科</option>
+				</optgroup>
+				<optgroup label="経営学部">
+					<option value="経営学科">経営学科</option>
+				</optgroup>
+				<optgroup label="法学部">
+					<option value="法律学科">法律学科</option>
+				</optgroup>
+				<optgroup label="工学部">
+					<option value="機械知能工学科">機械知能工学科</option>
+					<option value="電気電子工学科">電気電子工学科</option>
+					<option value="環境建設工学科">環境建設工学科</option>
+					<option value="情報基盤工学科">情報基盤工学科</option>
+				</optgroup>
+			</select><br>
+			<select>
+			  <optgroup label="学年">
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			  </optgroup>
+			</select>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>性別</legend>
+			<input type="radio" name="gender" value="male" id="male"><label for="male">男性</label><br>
+			<input type="radio" name="gender" value="female" id="female"><label for="female">女性</label>
+		</fieldset>
+		<br>
+		<h3>質問文</h3>
+		<br>
+		<fieldset>
+			普段、家にいて飲むことが多い飲み物はなんですか？(複数選択可)<br>その他の場合は具体的に記載してください。<br>
+			<input type="checkbox" name="drink" value="水" id="水"><label for="水">水</label><br>
+			<input type="checkbox" name="drink" value="お茶" id="お茶"><label for="お茶">お茶</label><br>
+			<input type="checkbox" name="drink" value="炭酸飲料" id="炭酸飲料"><label for="炭酸飲料">炭酸飲料</label><br>
+			<input type="checkbox" name="drink" value="スポーツドリンク" id="スポーツドリンク"><label for="スポーツドリンク">スポーツドリンク</label><br>
+			 <input type="checkbox" name="drink" value="その他" id="その他"><label for="その他">その他</label> <input type="text" name="drink" id="その他">
+		</fieldset>
+		<br>
+		<br>
+		<input type="submit" name="送信">
+	</form>
+ <a href="index3.html" title="index3に飛びます">index3</a>
+</body>
+</html>
